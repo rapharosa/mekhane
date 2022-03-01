@@ -7,11 +7,11 @@ class FormularioCadastro extends Component {
     this.texto = "";
   }
 
-  _handleMudancaTitulo(evento){
+  _handleEmpresa(evento){
     this.titulo = evento.target.value
   }
 
-  _handleMudancaTexto(evento){
+  _handleObservacao(evento){
     this.texto = evento.target.value
   }
 
@@ -26,7 +26,7 @@ class FormularioCadastro extends Component {
       <form className="formulario" onSubmit={this._criarNota.bind(this)}>
         <div className="item-formulario">
           <legend className="legenda">Empresa contratante</legend>
-          <input type="text" placeholder="Empresa contratante" onChange={this._handleMudancaTitulo.bind(this)} />
+          <input type="text" placeholder="Empresa contratante" onChange={this._handleEmpresa.bind(this)} />
         </div>
         <div className="item-formulario">
           <legend className="legenda">Equipamento</legend>
@@ -34,7 +34,7 @@ class FormularioCadastro extends Component {
         </div>
         <div className="item-formulario">
           <legend className="legenda">Observações</legend>
-          <textarea placeholder="Observações" onChange={this._handleMudancaTexto.bind(this)}/>
+          <textarea placeholder="Observações" onChange={this._handleObservacao.bind(this)}/>
         </div>
         <button className="botao">Criar nota</button>
       </form>
