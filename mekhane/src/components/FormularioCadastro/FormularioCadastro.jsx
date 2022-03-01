@@ -3,22 +3,27 @@ import "./formulario.css";
 class FormularioCadastro extends Component {
   constructor(props){
     super(props);
-    this.titulo = "";
-    this.texto = "";
+    this.empresa = "";
+    this.equipamento = "";
+    this.observacao = "";
   }
 
   _handleEmpresa(evento){
-    this.titulo = evento.target.value
+    this.empresa = evento.target.value
+  }
+
+  _handleEquipamento(evento){
+    this.equipamento = evento.target.value
   }
 
   _handleObservacao(evento){
-    this.texto = evento.target.value
+    this.observacao = evento.target.value
   }
 
   _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
-    this.props.criarNota(this.titulo, this.texto);
+    this.props.criarNota(this.empresa, this.equipamento, this.observacao);
   }
 
   render() {
@@ -30,7 +35,7 @@ class FormularioCadastro extends Component {
         </div>
         <div className="item-formulario">
           <legend className="legenda">Equipamento</legend>
-          <input type="text" placeholder="Equipamento" />
+          <input type="text" placeholder="Equipamento" onChange={this._handleEquipamento.bind(this)}/>
         </div>
         <div className="item-formulario">
           <legend className="legenda">Observações</legend>
