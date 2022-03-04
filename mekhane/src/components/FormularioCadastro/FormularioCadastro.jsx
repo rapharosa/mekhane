@@ -37,11 +37,15 @@ class FormularioCadastro extends Component {
     this.manutencao = evento.target.value
   }
 
+  _handleProfissional(evento){
+    this.profissional = evento.target.value
+  }
+
   _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
     this.props.criarNota(this.empresa, this.equipamento, this.observacao, this.solicitante, this.maquina,
-      this.data, this.manutencao);
+      this.data, this.manutencao, this.profissional);
   }
 
   render() {
@@ -80,6 +84,9 @@ class FormularioCadastro extends Component {
           <label for="manutencao">Preditiva</label>
           <input type="radio" name="manutencao" value="Corretiva" onChange={this._handleManutencao.bind(this)}/>
           <label for="manutencao">Corretiva</label>
+        </div>
+        <div>
+          <input type="text" placeholder="Nome do profissional" onChange={this._handleProfissional.bind(this)}/>
         </div>
         <button className="botao">Criar nota</button>
       </form>

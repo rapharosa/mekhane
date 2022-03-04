@@ -13,6 +13,7 @@ class CardNota extends Component {
         <p className="card-nota_texto">{this.props.maquina}</p><br/>
         <p className="card-nota_texto">{this.props.data}</p><br/>
         <p className="card-nota_texto">{this.props.manutencao}</p><br/>
+        <p className="card-nota_texto">{this.props.profissional}</p><br/>
       </section>
     );
   }
