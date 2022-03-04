@@ -8,7 +8,11 @@ class CardNota extends Component {
           <h3 className="card-nota_titulo">{this.props.empresa}</h3>
         </header>
         <p className="card-nota_texto">{this.props.equipamento} <br/></p>
-        <p className="card-nota_texto">{this.props.observacao}</p>
+        <p className="card-nota_texto">{this.props.observacao}</p><br/>
+        <p className="card-nota_texto">{this.props.solicitante}</p><br/>
+        <p className="card-nota_texto">{this.props.maquina}</p><br/>
+        <p className="card-nota_texto">{this.props.data}</p><br/>
+        <p className="card-nota_texto">{this.props.manutencao}</p><br/>
       </section>
     );
   }
