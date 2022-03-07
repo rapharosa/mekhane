@@ -12,7 +12,7 @@ class ListaDeNotas extends Component {
             <li className="lista-notas_item" key={index}>
               <CardNota empresa={nota.empresa} equipamento={nota.equipamento} observacao={nota.observacao}
                 solicitante={nota.solicitante} maquina={nota.maquina} data={nota.data} manutencao={nota.manutencao}
-                profissional={nota.profissional}/>
+                profissional={nota.profissional} descricao={nota.descricao} sintoma={nota.sintoma}/>
             </li>
           );
         })}
