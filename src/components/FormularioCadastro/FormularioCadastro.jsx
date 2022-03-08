@@ -31,7 +31,7 @@ class FormularioCadastro extends Component {
   }
 
   _handleData(evento) {
-    this.data = evento.target.value;
+    this.data = new Date(evento.target.value);
   }
 
   _handleManutencao(evento) {
