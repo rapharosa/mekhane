@@ -69,16 +69,16 @@ class FormularioCadastro extends Component {
   render() {
     return (
       <form className="formulario" onSubmit={this._criarNota.bind(this)}>
-        <div className="item-formulario">
+        <div className="empresa texto-direto">
           <legend className="legenda">Empresa contratante</legend>
           <input
             type="text"
-            placeholder="Empresa contratante"
+            placeholder="Cliente"
             onChange={this._handleEmpresa.bind(this)}
           />
         </div>
 
-        <div className="item-formulario">
+        <div className="equipamento texto-direto">
           <legend className="legenda">Equipamento</legend>
           <input
             type="text"
@@ -87,7 +87,8 @@ class FormularioCadastro extends Component {
           />
         </div>
 
-        <div>
+        <div className="solicitante texto-direto">
+          <legend className="legenda">Solicitante</legend>
           <input
             type="text"
             placeholder="Nome do solicitante"
@@ -95,8 +96,8 @@ class FormularioCadastro extends Component {
           />
         </div>
 
-        <div>
-          <legend>Maquina parada?</legend>
+        <div className="radio">
+          <legend className="legenda radio-legenda">Maquina parada?</legend>
           <input
             type="radio"
             name="Maquina"
@@ -113,12 +114,13 @@ class FormularioCadastro extends Component {
           <label for="Maquina">Não</label>
         </div>
 
-        <div>
+        <div className="data texto-direto">
+          <legend className="legenda">Data</legend>
           <input type="date" onChange={this._handleData.bind(this)} />
         </div>
 
-        <div>
-          <legend>Tipo de manutenção</legend>
+        <div className="manutencao radio">
+          <legend className="legenda radio-legenda">Tipo de manutenção</legend>
           <input
             type="radio"
             name="manutencao"
@@ -142,21 +144,26 @@ class FormularioCadastro extends Component {
           <label for="manutencao">Corretiva</label>
         </div>
 
-        <div>
+        <div className="texto-direto">
+          <legend className="legenda">Profissional</legend>
           <input
             type="text"
             placeholder="Nome do profissional"
             onChange={this._handleProfissional.bind(this)}
           />
+        </div>
+        <div className="texto-direto">
+          <legend className="legenda">Descrição da atividade</legend>
           <textarea
             rows={5}
+            cols={40}
             placeholder="Descreva o que foi realizado"
             onChange={this._handleDescricao.bind(this)}
           />
         </div>
 
-        <div>
-          <h3>Sintoma do dano</h3>
+        <div className="sintoma">
+          <legend className="legenda">Sintoma do dano</legend>
           <input
             type="checkbox"
             name="sintoma"
