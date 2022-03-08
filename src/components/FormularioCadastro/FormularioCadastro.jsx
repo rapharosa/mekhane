@@ -191,7 +191,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Alta velocidade"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Alta velocidade</label>
@@ -199,7 +199,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Baixa velocidade"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Baixa velocidade</label>
@@ -207,7 +207,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Alta temperatura"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Alta temperarura</label>
@@ -215,7 +215,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Baixa temperatura"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Baixa temperatura</label>
@@ -223,7 +223,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Função intermitente"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Função intermitente</label>
@@ -231,7 +231,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Produz fora do padrão"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Produz fora do padrão</label>
@@ -239,7 +239,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Equipamento parado"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Equipamento parado</label>
@@ -247,7 +247,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Inoperante"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Inoperante</label>
@@ -255,7 +255,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Quebrado"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Quebrado</label>
@@ -263,7 +263,7 @@ class FormularioCadastro extends Component {
           <input
             type="checkbox"
             name="sintoma"
-            value=""
+            value="Sem segurança"
             onChange={this._handleSintoma.bind(this)}
           />
           <label for="sintoma">Sem segurança</label>
