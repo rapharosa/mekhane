@@ -14,7 +14,7 @@ class ListaDeNotas extends Component {
                 equipamento={nota.equipamento}
                 solicitante={nota.solicitante}
                 maquina={nota.maquina}
-                data={nota.data.toLocalDateString('pt-BR')}
+                data={nota.data.toLocaleDateString('pt-BR')}
                 manutencao={nota.manutencao}
                 profissional={nota.profissional}
                 descricao={nota.descricao}
