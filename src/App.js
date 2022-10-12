@@ -1,34 +1,25 @@
-import React, { Component } from "react";
-import FormularioCadastro from "./components/FormularioCadastro/";
-import ListaDeNotas from "./components/ListaDeNotas/";
-import "./assets/App.css";
-import "./assets/index.css";
+import logo from './logo.svg';
+import './App.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      notas:[]
-    }
-  }
-
-  criarNota(empresa, equipamento, solicitante, maquina, data, manutencao, profissional, descricao, sintoma) {
-    const novaNota = { empresa, equipamento, solicitante, maquina, data, manutencao, profissional, descricao, sintoma};
-    const novoArrayNotas = [...this.state.notas,novaNota];
-    const novoEstado = {
-      notas:novoArrayNotas
-    }
-    this.setState(novoEstado)
-  }
-
-  render() {
-    return (
-      <section className="corpo-pagina">
-        <FormularioCadastro criarNota={this.criarNota.bind(this)} />
-        <ListaDeNotas notas={this.state.notas} />
-      </section>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
