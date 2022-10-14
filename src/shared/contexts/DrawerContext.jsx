@@ -8,14 +8,19 @@ export const useDrawerContext = () => {
 }
 
 export const DrawerProvider = ({ children }) => {
-    const [isDrawerOpen, setisDrawerOpen] = useState(false)
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+    const [drawerOptions, setDrawerOptions] = useState([])
 
     const toggleDrawerOpen = useCallback(() => {
-        setisDrawerOpen(oldDrawerOpen => !oldDrawerOpen)
+        setIsDrawerOpen(oldDrawerOpen => !oldDrawerOpen)
+    }, [])
+
+    const handleSetDrawerOptions = useCallback((newDrawerOptions) => {
+        setDrawerOptions(newDrawerOptions)
     }, [])
 
     return (
-        <DrawerContext.Provider value={{ isDrawerOpen, toggleDrawerOpen }}>
+        <DrawerContext.Provider value={{ isDrawerOpen, drawerOptions, toggleDrawerOpen, setDrawerOptions: handleSetDrawerOptions }}>
             {children}
         </DrawerContext.Provider>
     )
