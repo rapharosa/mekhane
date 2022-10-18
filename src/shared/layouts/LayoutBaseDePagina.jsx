@@ -1,5 +1,4 @@
-import { Icon, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material"
-import { Box } from "@mui/system"
+import { Box, Icon, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material"
 import { useDrawerContext } from "../contexts"
 
 export const LayoutBaseDePagina = ({ children, titulo, barraDeFerramentas }) => {
