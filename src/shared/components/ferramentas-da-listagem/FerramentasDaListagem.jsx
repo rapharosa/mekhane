@@ -1,6 +1,6 @@
 import { Box, Button, Icon, Paper, TextField, useTheme } from "@mui/material"
 
-export const BarraDeFerramentas = ({
+export const FerramentasDaListagem = ({
     textoDaBusca = '',
     mostrarInputBusca = false,
     aoMudarTextoDeBusca,
