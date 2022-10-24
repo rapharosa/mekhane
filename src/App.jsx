@@ -5,6 +5,8 @@ import { AppThemeProvider, DrawerProvider } from "./shared/contexts"
 
 
 export const App = () => {
+  
+
   return (
     <AppThemeProvider>
       <DrawerProvider>
